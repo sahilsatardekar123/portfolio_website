@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil - Developer Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600;1,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(23, 23, 29);
+            color: rgb(193, 141, 52);
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #484242;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: large;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav ul li a:hover {
+            color: rgb(12, 18, 3);
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+        .firstSection > div {
+            width: 40%;
+        }
+        .leftSection {
+            font-size: 3rem;
+        }
+        .rightSection {
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rightSection img {
+            width: 100%;
+            height: auto;
+        }
+        .purple {
+            color: white;
+        }
+        #element {
+            color:white;
+            display: block;
+            margin-top: 10px;
+        }
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .secondSection h1 {
+            color: #e74c3c;
+        }
+        .skills {
+            max-width: 80vw;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #e6f519;
+            border-radius: 5px;
+            background-color: #cfaa2e;
+            color: white;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgb(255, 193, 8);
+            color: #333;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sahil's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">   
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Sahil</span>
+                <div>and I am a passionate</div>
+                <div> Web Developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="my.png" alt="" srcset="">
+            </div>
+        </section>
+        <hr>
+        <section class="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', '&amp; DSA Coder.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
